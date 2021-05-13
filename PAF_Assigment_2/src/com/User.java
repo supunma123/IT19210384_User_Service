@@ -25,9 +25,9 @@ public class User {
 		     return con;
 		 }
 		
-		//====================Client=============================================
+		//====================User=============================================
 		
-		//=============insert Client Method===============
+		//=============insert User Method===============
 		
 		public String insertUser(String fname, String lname, String pno, String email,String type, String pw)
 		{
@@ -62,17 +62,17 @@ public class User {
 				
 		 		String newUser = readUsers(); 
 				 output = "{\"status\":\"success\", \"data\": \"" + 
-				 newUser + "\"}"; 
+				            newUser + "\"}"; 
 			}
 			catch (Exception e)
 			{
-				output = "{\"status\":\"error\", \"data\": \"Error while inserting the Client.\"}";
+				output = "{\"status\":\"error\", \"data\": \"Error while inserting the Users.\"}";
 				System.err.println(e.getMessage());
 			}
 			return output;
 		}
 		
-		//=============Read all Clients ===============
+		//=============Read all Users ===============
 		
 		public String readUsers()
 		 {
@@ -140,7 +140,7 @@ public class User {
 			 return output;
 		 }
 		
-		//=============Updating a Client Method===============
+		//=============Updating a User Method===============
 
 		public String updateUser(String userId, String fname, String lname, String pno, String email, String type, String pw)
 		{
@@ -173,18 +173,18 @@ public class User {
 				 
 			 		String newUser = readUsers(); 
 					 output = "{\"status\":\"success\", \"data\": \"" + 
-					 newUser + "\"}"; 
+					             newUser + "\"}"; 
 			 }
 			 catch (Exception e)
 			 {
-					output = "{\"status\":\"error\", \"data\": \"Error while updating the Client.\"}";
+					output = "{\"status\":\"error\", \"data\": \"Error while updating the User.\"}";
 					System.err.println(e.getMessage());
 			 }
 			 	return output;
 			 }
 		
 		
-		//=============Deleting Client Method===============
+		//=============Deleting User Method===============
 		
 		public String deleteUser(String userId)
 		 {
@@ -208,11 +208,11 @@ public class User {
 				 con.close();
 					String newUser = readUsers(); 
 					 output = "{\"status\":\"success\", \"data\": \"" + 
-					 newUser + "\"}"; 
+					               newUser + "\"}"; 
 			 }
 			 catch (Exception e)
 			 {
-					output = "{\"status\":\"error\", \"data\": \"Error while deleting the item.\"}";
+					output = "{\"status\":\"error\", \"data\": \"Error while deleting the User.\"}";
 					System.err.println(e.getMessage());
 			 }
 			 	return output;

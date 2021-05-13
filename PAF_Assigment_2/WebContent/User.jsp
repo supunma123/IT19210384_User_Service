@@ -8,7 +8,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Client handling</title>
+<title>User Register</title>
 
 
 <link rel = "stylesheet" href = "Views/bootstrap.min.css">
