@@ -29,7 +29,7 @@ public class User {
 		
 		//=============insert Client Method===============
 		
-		public String insertClient(String fname, String lname, String pno, String email,String type, String pw)
+		public String insertUser(String fname, String lname, String pno, String email,String type, String pw)
 		{
 			String output = "";
 			try
@@ -60,7 +60,7 @@ public class User {
 			
 				con.close();
 				
-				String newUser = readClients(); 
+		 		String newUser = readUsers(); 
 				 output = "{\"status\":\"success\", \"data\": \"" + 
 				 newUser + "\"}"; 
 			}
@@ -74,7 +74,7 @@ public class User {
 		
 		//=============Read all Clients ===============
 		
-		public String readClients()
+		public String readUsers()
 		 {
 			 String output = "";
 			 try
@@ -171,7 +171,7 @@ public class User {
 				 preparedStmt.execute();
 				 con.close();
 				 
-			 		String newUser = readClients(); 
+			 		String newUser = readUsers(); 
 					 output = "{\"status\":\"success\", \"data\": \"" + 
 					 newUser + "\"}"; 
 			 }
@@ -206,7 +206,7 @@ public class User {
 				 // execute the statement
 				 preparedStmt.execute();
 				 con.close();
-					String newUser = readClients(); 
+					String newUser = readUsers(); 
 					 output = "{\"status\":\"success\", \"data\": \"" + 
 					 newUser + "\"}"; 
 			 }
