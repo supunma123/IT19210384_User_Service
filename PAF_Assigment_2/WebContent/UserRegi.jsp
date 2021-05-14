@@ -8,14 +8,14 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>User Register</title>
+<title>User Management</title>
 
 
 <link rel = "stylesheet" href = "Views/bootstrap.min.css">
 <script src = "Components/jquery-3.2.1.min.js"></script>
 <script src = "Components/Users.js"></script>
 
-
+<body background  ='Images/P564JVg.jpg'> 
 
 </head>
 <body>
@@ -24,10 +24,10 @@
 	<div class="row">
 		<div class="col">
 
-		<h1>User Management</h1>
+		<h1>User Register</h1>
 		
 	<form id="formItem" name="formItem"  >
-		    First Name:<br>
+		    First Name:
 			<input id='firstName' name='firstName' type='text' class='form-control form-control-sm'><br>
 			Last Name: 
 			<input id='lastName' name='lastName' type='text' class='form-control form-control-sm'><br> 
