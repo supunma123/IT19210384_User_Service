@@ -14,7 +14,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 /**
- * Servlet implementation class ClientAPI
+ * Servlet implementation class UserAPI
  */
 @WebServlet("/UserAPI")
 public class UserAPI extends HttpServlet {
